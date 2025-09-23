@@ -1,0 +1,18 @@
+<resources>
+    <!--App name-->
+    <string name="app_name">Ayos_App</string>
+
+    <!-- Home page texts -->
+    <string name="community_issue_text">
+        Encountered an issue within the community? <font color='#3C693D'>Let us know</font>.
+    </string>
+    <string name="dashboard">Dashboard</string>
+    <string name="location">Bakakeng Sur</string>
+    <string name="report">Report</string>
+
+    <!-- button descriptions -->
+    <string name="profile_button_description">Profile</string>
+    <string name="home_button_description">Home</string>
+    <string name="report_list_button_description">Report List</string>
+    <string name="location_icon_description">Location-Icon</string>
+</resources>
