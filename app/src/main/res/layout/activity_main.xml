@@ -30,28 +30,29 @@
         android:id="@+id/dashboard_location"
         android:layout_width="161dp"
         android:layout_height="20dp"
+        android:layout_marginTop="1dp"
         android:text="@string/location"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintHorizontal_bias="0.296"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115" />
+        app:layout_constraintTop_toBottomOf="@+id/dashboard"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/icon_1_location"
-        android:contentDescription="@string/location_icon_description"
         android:layout_width="22dp"
         android:layout_height="20dp"
+        android:contentDescription="@string/location_icon_description"
         android:foregroundTint="#D3C8C8"
         android:src="@drawable/icon_1_location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <ProgressBar
@@ -95,19 +96,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintTop_toBottomOf="@+id/issue_text"
+        app:layout_constraintVertical_bias="0.037" />
 
     <ImageButton
         android:id="@+id/profile_button"
-        android:contentDescription="@string/profile_button_description"
         android:layout_width="61dp"
         android:layout_height="61dp"
+        android:contentDescription="@string/profile_button_description"
         android:src="@drawable/icons8_profile_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.845"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/home_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
 
@@ -125,13 +126,13 @@
 
     <ImageButton
         android:id="@+id/report_list_button"
-        android:contentDescription="@string/report_list_button_description"
         android:layout_width="61dp"
         android:layout_height="61dp"
+        android:contentDescription="@string/report_list_button_description"
         android:src="@drawable/icons8_document_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintEnd_toStartOf="@+id/home_button"
+        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
