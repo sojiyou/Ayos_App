@@ -4,13 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.ayos_app.ui.theme.Ayos_AppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,29 +15,22 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Ayos_AppTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "App",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                val navController = rememberNavController()
+                NavHost(navController = navController, startDestination = "landing") {
+                    composable("landing") {
+                        LandingScreen(
+                            onLoginClick = { navController.navigate("login") },
+                            onSignupClick = { navController.navigate("signup") }
+                        )
+                    }
+                    composable("login") {
+                        LoginScreen(onBack = { navController.popBackStack() })
+                    }
+                    composable("signup") {
+                        SignupScreen(onBack = { navController.popBackStack() })
+                    }
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Ayos $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Ayos_AppTheme {
-        Greeting("Android")
     }
 }
