@@ -156,7 +156,7 @@
         android:layout_height="136dp"
         android:background="@drawable/rectangle_bg"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="486dp" />
+        tools:layout_editor_absoluteY="462dp" />
 
     <TextView
         android:id="@+id/textView7"
