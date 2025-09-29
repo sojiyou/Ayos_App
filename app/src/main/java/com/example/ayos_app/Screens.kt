@@ -78,7 +78,7 @@ fun LandingScreen(
 
 // Login screen
 @Composable
-fun LoginScreen(onBack: () -> Unit) {
+fun LoginScreen(onBack: () -> Unit, onLoginSuccess: () -> Unit) {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -89,6 +89,10 @@ fun LoginScreen(onBack: () -> Unit) {
         Text("Login Screen", fontSize = 24.sp)
 
         Spacer(modifier = Modifier.height(20.dp))
+
+        Button(onClick = onLoginSuccess) {
+            Text("Login")
+        }
 
         Button(onClick = onBack) {
             Text("Back to Home")

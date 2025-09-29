@@ -29,14 +29,14 @@
         app:layout_constraintVertical_bias="0.201" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/profileButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icons8_profile_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.946" />
 
@@ -135,14 +135,14 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_time"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/homeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icons8_home_26"
@@ -154,12 +154,12 @@
         app:layout_constraintVertical_bias="0.948" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/reportListButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icons8_document_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
         app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -226,7 +226,7 @@
         app:layout_constraintVertical_bias="0.781" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/editProfileOption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/prof_forw"
@@ -238,7 +238,7 @@
         app:layout_constraintVertical_bias="0.444" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/settingsOption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/prof_forw"
@@ -250,7 +250,7 @@
         app:layout_constraintVertical_bias="0.296" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/logOutOption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/prof_forw"
