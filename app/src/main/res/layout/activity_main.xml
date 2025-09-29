@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.083" />
 
     <Button
-        android:id="@+id/report_button"
+        android:id="@+id/reportButton"
         android:layout_width="99dp"
         android:layout_height="48dp"
         android:backgroundTint="#D2E4D4"
@@ -103,7 +103,7 @@
         app:layout_constraintVertical_bias="0.037" />
 
     <ImageButton
-        android:id="@+id/profile_button"
+        android:id="@+id/profileButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:contentDescription="@string/profile_button_description"
@@ -111,12 +111,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toEndOf="@+id/home_button"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
 
     <ImageButton
-        android:id="@+id/home_button"
+        android:id="@+id/homeButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:contentDescription="@string/home_button_description"
@@ -128,20 +128,20 @@
         app:layout_constraintVertical_bias="0.955" />
 
     <ImageButton
-        android:id="@+id/report_list_button"
+        android:id="@+id/reportListButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:contentDescription="@string/report_list_button_description"
         android:src="@drawable/icons8_document_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/home_button"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
         app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
 
     <TextView
-        android:id="@+id/resolved_percentage"
+        android:id="@+id/resolvedTextView"
         android:layout_width="145dp"
         android:layout_height="19dp"
         android:layout_marginTop="256dp"
@@ -152,7 +152,7 @@
         app:layout_constraintTop_toTopOf="@+id/progressBar" />
 
     <TextView
-        android:id="@+id/unresolved_percentage"
+        android:id="@+id/unresolvedTextView"
         android:layout_width="145dp"
         android:layout_height="19dp"
         android:text="@string/unresolved_perc"
@@ -160,7 +160,7 @@
         app:layout_constraintEnd_toEndOf="@+id/progressBar"
         app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="@+id/progressBar"
-        app:layout_constraintTop_toBottomOf="@+id/resolved_percentage"
+        app:layout_constraintTop_toBottomOf="@+id/resolvedTextView"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

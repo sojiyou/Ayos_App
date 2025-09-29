@@ -22,4 +22,6 @@
     <string name="home_button_description">Home</string>
     <string name="report_list_button_description">Report List</string>
     <string name="location_icon_description">Location-Icon</string>
+
+    <string name="report_title">Report Status</string>
 </resources>

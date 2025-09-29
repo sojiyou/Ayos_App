@@ -1,17 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:backgroundTint="#A9A7A7"
+    android:foregroundTint="#4CAF50"
+    android:orientation="vertical">
+
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/reportTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Report Status"
-        android:textColor="@color/report_status_color"
-        android:textSize="30sp"
+        android:foregroundTint="#4B954F"
+        android:text="@string/report_title"
+        android:textColor="#4B954E"
+        android:textColorLink="@color/white"
+        android:textSize="34sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="64dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:contentDescription="@string/profile_button_description"
+        android:src="@drawable/icons8_profile_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:contentDescription="@string/home_button_description"
+        android:src="@drawable/icons8_home_26"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
+    <ImageButton
+        android:id="@+id/reportListButton"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:contentDescription="@string/report_list_button_description"
+        android:src="@drawable/icons8_document_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.955" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

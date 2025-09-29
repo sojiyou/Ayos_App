@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:id="@+id/dashboard2"
+        android:id="@+id/totalPendingReports"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:foregroundTint="#4B954F"
@@ -20,7 +20,7 @@
         android:textColorLink="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintBottom_toTopOf="@+id/reportView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
         app:layout_constraintVertical_bias="0.29" />
 
     <ImageButton
-        android:id="@+id/profile_button"
+        android:id="@+id/profileButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:contentDescription="@string/profile_button_description"
@@ -98,12 +98,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toEndOf="@+id/home_button"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
 
     <ImageButton
-        android:id="@+id/home_button"
+        android:id="@+id/homeButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:contentDescription="@string/home_button_description"
@@ -115,31 +115,33 @@
         app:layout_constraintVertical_bias="0.955" />
 
     <ImageButton
-        android:id="@+id/report_list_button"
+        android:id="@+id/reportListButton"
         android:layout_width="61dp"
         android:layout_height="61dp"
         android:contentDescription="@string/report_list_button_description"
         android:src="@drawable/icons8_document_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/home_button"
+        app:layout_constraintEnd_toStartOf="@+id/homeButton"
         app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.955" />
 
     <TextView
-        android:id="@+id/resolved_percentage"
+        android:id="@+id/resolvedTextView"
         android:layout_width="145dp"
         android:layout_height="19dp"
         android:layout_marginTop="256dp"
+        android:layout_marginBottom="35dp"
         android:text="@string/resolved_perc"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBar"
         app:layout_constraintEnd_toEndOf="@+id/progressBar"
         app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="@+id/progressBar"
         app:layout_constraintTop_toTopOf="@+id/progressBar" />
 
     <TextView
-        android:id="@+id/unresolved_percentage"
+        android:id="@+id/unresolvedTextView"
         android:layout_width="145dp"
         android:layout_height="19dp"
         android:text="@string/unresolved_perc"
@@ -147,28 +149,32 @@
         app:layout_constraintEnd_toEndOf="@+id/progressBar"
         app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="@+id/progressBar"
-        app:layout_constraintTop_toBottomOf="@+id/resolved_percentage"
+        app:layout_constraintTop_toBottomOf="@+id/resolvedTextView"
         app:layout_constraintVertical_bias="0.0" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/reportView"
         android:layout_width="321dp"
         android:layout_height="136dp"
         android:background="@drawable/rectangle_bg"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="486dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/reportDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/report_date"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/reportView"
+        app:layout_constraintEnd_toEndOf="@+id/reportView"
         app:layout_constraintHorizontal_bias="0.06"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/reportView"
+        app:layout_constraintTop_toBottomOf="@+id/reportTitle"
         app:layout_constraintVertical_bias="0.47" />
 
     <ImageView
@@ -176,36 +182,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icons8_menu_vertical_24__1_"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/reportView"
+        app:layout_constraintEnd_toEndOf="@+id/reportView"
         app:layout_constraintHorizontal_bias="0.986"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/reportView"
+        app:layout_constraintTop_toTopOf="@+id/reportView"
         app:layout_constraintVertical_bias="0.23" />
 
     <ImageView
-        android:id="@+id/imageView21"
+        android:id="@+id/reportImage"
         android:layout_width="60dp"
         android:layout_height="55dp"
         android:src="@drawable/icons8_image_placeholder_50"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/reportView"
+        app:layout_constraintEnd_toEndOf="@+id/reportView"
         app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/reportView"
+        app:layout_constraintTop_toTopOf="@+id/reportView"
         app:layout_constraintVertical_bias="0.144" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/reportTitle"
         android:layout_width="206dp"
         android:layout_height="26dp"
         android:layout_marginTop="12dp"
         android:text="@string/report_desc"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/reportView"
+        app:layout_constraintEnd_toEndOf="@+id/reportView"
         app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+        app:layout_constraintStart_toStartOf="@+id/reportView"
+        app:layout_constraintTop_toBottomOf="@+id/reportImage"
+        app:layout_constraintVertical_bias="0.032" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
