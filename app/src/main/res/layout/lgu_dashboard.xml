@@ -14,7 +14,7 @@
         android:id="@+id/totalPendingReports"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:foregroundTint="#4B954F"
+        android:foregroundTint="#3C693D"
         android:text="@string/pending_reports"
         android:textColor="#4B954E"
         android:textColorLink="@color/white"
